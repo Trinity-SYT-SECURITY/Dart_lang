@@ -1,2 +1,39 @@
-# Dart_lang
-不歸路
+### 學習過程中遇到的問題
+
+1. extension 跟 class的語法在dart lan差別
+
+使用class的方式和使用extension的方式都可以為現有class添加新的功能。然而，class和extension之間有一些關鍵的區別：
+
++ 目的和設計思路：class用於創建對象和定義對象的行為和狀態，它是面向對象編程的核心概念之一。extension的目的是為現有class添加新的方法或成員，以提供額外的功能或extension現有class的能力。
+
++ 訪問權限：class內部可以訪問class的私有成員（私有屬性和方法），而extension無法訪問原始class的私有成員。extension只能訪問原始class的公共成員（公共屬性和方法）。
+
++ extension的適用場景：extension通常用於為第三方庫或原始class添加額外的功能，而無需修改原始class的代碼。如果您有權修改原始class的代碼，並且添加新功能不會破壞現有代碼的穩定性和兼容性，那麼在class內部直接添加新的方法或成員可能更為合適。
+
++ 繼承關係：class可以通過繼承關係構建層次結構，子class可以繼承和重寫父class的方法。而extension沒有繼承關係，它只能為單個class添加新的方法或成員。
+
+總結起來，class和extension的使用場景和目的略有不同。class用於創建對象和定義對象的行為和狀態，而extension用於為現有class添加新的方法或成員，以提供額外的功能或extension能力。
+
+如果您需要修改原始class的行為或創建繼承關係，那麼在class內部添加新的方法或成員可能更適合。
+
+如果您只需要為現有class添加一些新的功能或extension現有功能，而不修改原始class的代碼，那麼extension是一個不錯的選擇。選擇何種方式取決於您的需求和設計考慮。
+
+
+2. "m++ , ++m , --m , m-- "這些在程式運行後給出的結果為?
+   
+```dart
+//++m
+int m = 5;
+int result = ++m;
+print(result); // 输出: 6 -->程式輸出時會以這裡結果輸出
+print(m); // 输出: 6
+
+//m++
+int m = 5;
+int result = m++;
+print(result); // 输出: 5-->程式輸出時會以這裡結果輸出
+print(m); // 输出: 6
+```
+不要看最後m值都一樣，應該看第一狀態已這舉例為result才是電腦輸出結果
+
+3.
