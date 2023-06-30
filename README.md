@@ -37,6 +37,7 @@ print(m); // 输出: 6
 不要看最後m值都一樣，應該看第一狀態已這舉例為result才是電腦輸出結果
 
 3. mixin 跟 implements差別
+      
    <table> <tr> 
       <td> </td> <td>implements</td> <td>mixin</td></tr> 
       <tr> 
@@ -64,6 +65,8 @@ print(m); // 输出: 6
   </table> 
 
   > 總結來說，implements 用於實現接口的約定和多態操作，而 mixin 用於代碼的組合和重用，提供了一種更靈活的代碼復用機制。具體使用哪種方式取決於你的需求和設計目標。
+
+
 4. 
    
 
