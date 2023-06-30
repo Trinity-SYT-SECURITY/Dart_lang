@@ -37,14 +37,12 @@ print(m); // 输出: 6
 ---
 
 3. mixin 跟 implements差別
----
- <table> <tr> 
-      <td> </td> <td>implements</td> <td>mixin</td></tr> 
+<table> <tr> 
+   <td> </td> <td>implements</td> <td>mixin</td></tr> 
       <tr> 
          <td> 實現的方式 </td> 
          <td> 通過實現接口來實現代碼復用 </td> 
-         <td> mixin 是通過混入一組方法和屬性來實現代碼復用 </td > 
-    
+         <td> mixin 是通過混入一組方法和屬性來實現代碼復用 </td >
      </tr>
      <tr>
         <td> 接口要求 </td>
@@ -60,11 +58,13 @@ print(m); // 输出: 6
         <td> 代碼復用的方式 </td>
         <td> 用於實現接口的約定，將多個類統一起來，以便進行多態操作 </td> 
         <td> mixin 主要用於在類之間共享和復用代碼，提供一種更靈活的組合方式 </td > 
-     </tr>
-  
+     </tr>  
   </table> 
 
+
   > 總結來說，implements 用於實現接口的約定和多態操作，而 mixin 用於代碼的組合和重用，提供了一種更靈活的代碼復用機制。具體使用哪種方式取決於你的需求和設計目標。
+![image](https://github.com/Trinity-SYT-SECURITY/Dart_lang/assets/96654161/fef753a7-b452-4152-87e1-e37174be392f)
+**參考mixin程式碼**
 ---
 4. 
       
